@@ -8,7 +8,28 @@
 <body>
     
    <script>
-    hello
+    function sayhello(){
+        console.log("sayhello");
+
+    }
+    function sayhii(){
+        console.log("sayhii");
+
+    }
+       function add(x,y ,callback ){
+         console.log(x+y);
+         callback()
+       }
+
+       let a = 10;
+       b = 5;
+
+       add(a,b, sayhii)
+
+       c = 45 ;
+       d = 30 ;
+
+       add(c,d, sayhello)
    </script>
 
 </body>
